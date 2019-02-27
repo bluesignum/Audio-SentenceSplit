@@ -51,8 +51,8 @@ def similar_word_idx(sentence, target_word, loc, end):
             if prob == 1.0:
                 break
 
-    print("chunk word:{}, candidate:{}, probability:{}\n".format
-          (target_word, sentence[candidate_idx], candidate_prob))
+    if DEBUG: print("chunk word:{}, candidate:{}, probability:{}\n".format
+                    (target_word, sentence[candidate_idx], candidate_prob))
 
     if candidate_prob > 0.65:                                       # probability threshold
         return candidate_idx
@@ -66,7 +66,7 @@ def find_similar_part(sentence, chunk):
     start = 0
     part = None
 
-    print("sentence: {}, case: {}".format(sentence, case))
+    if DEBUG: print("sentence: {}, case: {}".format(sentence, case))
     for i in range(case):
         part = " ".join(sentence[i:i+len(chunk)+1])                 # 탐색구간 한칸 더 크게
         sims[i] = similarity(part, chunk)
@@ -78,7 +78,7 @@ def find_similar_part(sentence, chunk):
             start = key
             part = sentence[key:key+len(chunk)+1]
 
-    print("chunk: {}\nsimilar part: {}\nkey: {}, similarity: {}".format(chunk, part, start, high_sim))
+    if DEBUG: print("chunk: {}\nsimilar part: {}\nkey: {}, similarity: {}".format(chunk, part, start, high_sim))
 
     return start, high_sim
 
@@ -100,7 +100,7 @@ def update(text, stt_text, intervals):
         init += point
         point = 0
 
-        print("original sentence number:{}, length:{}".format(sent_idx, len(sentence)))
+        if DEBUG: print("original sentence number:{}, length:{}".format(sent_idx, len(sentence)))
         for i in range(len(stt_text)):                                   # Start to compare chunk to sentence in order
             stt_data = stt_text[i+init].split(',')
             chunk = sentence_split(stt_data[3])
@@ -108,7 +108,7 @@ def update(text, stt_text, intervals):
 
             if sim >= 0.6:                                          # 비슷한 덩어리를 문장에서 찾았을 때
                 point += 1
-                print("chunk is similar!")
+                if DEBUG: print("chunk is similar!")
                 for a, word in enumerate(chunk):
                     idx = similar_word_idx(sentence, word, key, len(chunk))
                     if idx == 0 and on == 0:
@@ -117,20 +117,17 @@ def update(text, stt_text, intervals):
                         loc = 1
                     elif idx == len(sentence)-1:
                         intervals[sent_idx][1] = stt_data[2]        # update end
-                        print("intervals: {}".format(intervals))
                         sent_idx += 1
                         breaker = True
                         break
                     elif idx != -1:                                 # neither start nor end
                         findings[idx] = a
 
-                print(stt_text)
                 if breaker: break
 
                 l = [n for n in findings.keys() if 0 < n < key+len(chunk)]
-                print("location candidates: {}".format(l))
                 if len(l) > 0 : loc = max(l) + len(chunk) - findings[max(l)]
-                print("final location: {}".format(loc))
+                if DEBUG: print("final location: {}".format(loc))
 
             else:                                                   # 못찾았을 때
                 unknowns.append(",".join(stt_data))
@@ -141,7 +138,7 @@ def update(text, stt_text, intervals):
                 #             sent_idx +=1
                 #             break
                 loc += len(chunk)
-                print("current location: {}\n".format(loc))
+                if DEBUG: print("current location: {}\n".format(loc))
 
             if loc >= len(sentence):
                 sent_idx += 1
@@ -185,8 +182,7 @@ if __name__ == "__main__":
     stt_txt = load_txt(STT_PATH)
     new_intervals = blank_intervals(txt)
     intervals, unknowns, stt_txt = update(txt, stt_txt, new_intervals)
-    intervals, unknowns, stt_txt = update(txt, stt_txt, new_intervals)
-    print("#################\nStt_Text_Remaining: {}\n".format(stt_txt))
-    #intervals, unknowns = update(txt, list(set(unknowns)), intervals)
-    # intervals = elaboration(intervals)
     print("intervals:{}\nunknowns:{}".format(intervals, set(unknowns)))
+    intervals = elaboration(intervals)
+    print(intervals)
+    audio_update(AUDIO_PATH, intervals)
