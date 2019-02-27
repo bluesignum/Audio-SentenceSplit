@@ -89,6 +89,7 @@ def update(text, stt_text, intervals):
 
     breaker = False
     sent_idx = 0
+    init = 0
 
     # Analyze sentence in order
     while sent_idx < len(text):
@@ -97,8 +98,8 @@ def update(text, stt_text, intervals):
         l = []
 
         print("original sentence number:{}, length:{}".format(sent_idx, len(sentence)))
-        for i, data in enumerate(stt_text):                         # Start to compare chunk to sentence in order
-            stt_data = data.split(',')
+        for i in range(len(stt_text)):                                   # Start to compare chunk to sentence in order
+            stt_data = stt_text[i+init].split(',')
             chunk = sentence_split(stt_data[3])
             key, sim = find_similar_part(sentence, chunk)
 
@@ -109,7 +110,7 @@ def update(text, stt_text, intervals):
                     if idx == 0 and on == 0:
                         intervals[sent_idx][0] = stt_data[1]        # update start
                         on = 1
-                        loc += 1
+                        loc = 1
                     elif idx == len(sentence)-1:
                         intervals[sent_idx][1] = stt_data[2]        # update end
                         print("intervals: {}".format(intervals))
@@ -118,8 +119,8 @@ def update(text, stt_text, intervals):
                         break
                     elif idx != -1:                                 # neither start nor end
                         findings[idx] = a
+                init += 1
 
-                stt_text[i] = ",,,"
                 print(stt_text)
                 if breaker: break
 
@@ -142,8 +143,6 @@ def update(text, stt_text, intervals):
             if loc >= len(sentence):
                 sent_idx += 1
                 break
-
-
 
     return intervals, unknowns, stt_text
 
@@ -182,6 +181,7 @@ if __name__ == "__main__":
     txt = load_txt(ORIGINAL_TXT_PATH)
     stt_txt = load_txt(STT_PATH)
     new_intervals = blank_intervals(txt)
+    intervals, unknowns, stt_txt = update(txt, stt_txt, new_intervals)
     intervals, unknowns, stt_txt = update(txt, stt_txt, new_intervals)
     print("#################\nStt_Text_Remaining: {}\n".format(stt_txt))
     #intervals, unknowns = update(txt, list(set(unknowns)), intervals)
