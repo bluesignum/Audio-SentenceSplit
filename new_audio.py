@@ -2,9 +2,6 @@ import os
 from difflib import SequenceMatcher
 from pydub import AudioSegment
 
-STT_PATH = "./androcles-shorter_STT.txt"
-ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
-AUDIO_PATH = "./androcles-shorter.mp3"
 DEBUG = 0
 
 
@@ -44,7 +41,6 @@ def similar_word_idx(sentence, target_word, loc, end):
     new_sentence = sentence[loc:loc+end+1]
     for idx, word in enumerate(new_sentence):
         prob = similarity(new_sentence[idx], target_word)
-        if DEBUG : print("({},{}:{:0.2f}%)".format(word, target_word, prob*100))
         if prob > candidate_prob:
             candidate_prob = prob
             candidate_idx = idx + loc
@@ -106,7 +102,7 @@ def update(text, stt_text, intervals):
             chunk = sentence_split(stt_data[3])
             key, sim = find_similar_part(sentence, chunk)
 
-            if sim >= 0.6:                                          # 비슷한 덩어리를 문장에서 찾았을 때
+            if sim >= 0.6:                                          # Similar chunk is in the sentence
                 point += 1
                 if DEBUG: print("chunk is similar!")
                 for a, word in enumerate(chunk):
@@ -129,7 +125,7 @@ def update(text, stt_text, intervals):
                 if len(l) > 0 : loc = max(l) + len(chunk) - findings[max(l)]
                 if DEBUG: print("final location: {}".format(loc))
 
-            else:                                                   # 못찾았을 때
+            else:                                                   # NOT FOUND
                 unknowns.append(",".join(stt_data))
                 # for x, word in enumerate(chunk):
                 #     idx = similar_word_idx(sentence, word, loc, len(chunk))
@@ -148,7 +144,7 @@ def update(text, stt_text, intervals):
 
 
 def elaboration(intervals):
-    padding = 500
+    padding = 600
     # String to integer
     for idx in range(len(intervals)):
         intervals[idx][0] = int(intervals[idx][0])
@@ -165,24 +161,36 @@ def elaboration(intervals):
     return intervals
 
 
-def audio_update(audio_path, intervals, out_ext="wav"):
-    padding = 50
+def audio_update(audio_path, new_audio_path, intervals, out_ext="wav"):
+    padding = 100
     audio = AudioSegment.from_file(audio_path)
     filename = os.path.basename(audio_path).split('.', 1)[0]
 
     for idx, (start_idx, end_idx) in enumerate(intervals[:]):
         if start_idx != -1 and end_idx != -1:
-            target_audio_path = "./audio/{}.{:04d}.{}".format(filename, idx, out_ext)
+            target_audio_path = new_audio_path + "{}.{:04d}.{}".format(filename, idx, out_ext)
             segment = audio[start_idx-padding:end_idx+padding]
             segment.export(target_audio_path, out_ext)
 
 
-if __name__ == "__main__":
-    txt = load_txt(ORIGINAL_TXT_PATH)
-    stt_txt = load_txt(STT_PATH)
+def final_update(original_txt_path, stt_path, audio_path, new_audio_path):
+    txt = load_txt(original_txt_path)
+    stt_txt = load_txt(stt_path)
     new_intervals = blank_intervals(txt)
+
     intervals, unknowns, stt_txt = update(txt, stt_txt, new_intervals)
-    print("intervals:{}\nunknowns:{}".format(intervals, set(unknowns)))
+    if DEBUG: print("intervals:{}\nunknowns:{}".format(intervals, set(unknowns)))
+
     intervals = elaboration(intervals)
-    print(intervals)
-    audio_update(AUDIO_PATH, intervals)
+    if DEBUG: print("elaborated intervals: {}".format(intervals))
+
+    audio_update(audio_path, new_audio_path, intervals)
+
+
+if __name__ == "__main__":
+    STT_PATH = "./androcles-shorter_STT.txt"
+    ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
+    AUDIO_PATH = "./androcles-shorter.mp3"
+    NEW_AUDIO_PATH = "./audio/"
+
+    final_update(ORIGINAL_TXT_PATH, STT_PATH, AUDIO_PATH, NEW_AUDIO_PATH)

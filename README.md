@@ -1,15 +1,13 @@
 # Hello
 
-original_text.py : 전체 스크립트 문장단위로 끊기
+original_text.py : Split text file by ., ?, ! and save sentences in a new text file.
 
 
-google_speech.py : 구글 speech api 이용 (split audio에서 자체적으로 사용)
+google_speech.py : use Google Speech Recognition API
 
 
-split_audio.py : 전체 음성 파일을 silence 단위로 끊어서 STT로 line 받기
+split_audio.py : Split single audio into small chunks by silent intervals and make corresponding text using Google API
 
 
-text_comparison.py : 짜맞추기 초안
-
-
-new_audio.py : 개선안
+new_audio.py : Compare short text corresponding to small chunks with sentence text,
+               and create new audio files for each sentence

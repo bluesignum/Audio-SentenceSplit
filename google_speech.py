@@ -24,11 +24,11 @@ def call_google(audio):
     return trans
 
 
-def audio_processing(path, intervals):
-    root = os.path.splitext(path)[0].rsplit('.', 1)[0].rsplit('/')[-1]
+def audio_processing(path, intervals, root):
+    name = os.path.splitext(path)[0].rsplit('.', 1)[0].rsplit('/')[-1]
     line_number = os.path.splitext(path)[0].rsplit('.', 1)[1]
 
-    txt_path = root + "_STT.txt"
+    txt_path = name + "_STT.txt"
 
     # Loads the audio into memory
     with io.open(path, 'rb') as audio_file:
@@ -36,14 +36,14 @@ def audio_processing(path, intervals):
         # audio_duration = AudioSegment.from_file(path).duration_seconds
 
     trans = call_google(audio)
-    if not trans == None:
+    if not trans is None:
         data = "{},{},{},{}\n".format(line_number, intervals[0], intervals[1], trans)
 
         if os.path.exists(txt_path):
-            with open("./" + txt_path, 'a') as f:
+            with open(root + txt_path, 'a') as f:
                 f.write(data)
         else:
-            with open("./" + txt_path, 'w') as f:
+            with open(root + txt_path, 'w') as f:
                 f.write(data)
     else:
         pass

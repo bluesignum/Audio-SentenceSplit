@@ -1,7 +1,5 @@
 import re
 
-TXT_PATH = "./androcles-shorter_ORIGINAL.txt"
-NEW_TEXT_PATH = "./{}_SENTENCE.txt".format(TXT_PATH.rsplit('.', 1)[0].rsplit('/', 1)[-1])
 DEBUG = 1
 
 
@@ -44,20 +42,16 @@ def create_sentence(txt):
     return sentences
 
 
-def text_load_and_save(path):
+def text_load_and_save(path, new_text_path):
     with open(path, 'r') as f:
         txt = f.readlines()
 
     txt = split_into_words(txt)
     txt = create_sentence(txt)
 
-    with open(NEW_TEXT_PATH, 'w') as f:
+    with open(new_text_path, 'w') as f:
         for idx in range(len(txt)):
             f.write("{0:04d}, ".format(idx) + txt[idx] + "\n")
 
     if DEBUG:
         print("Complete!")
-
-
-if __name__ == "__main__":
-    text_load_and_save(TXT_PATH)
