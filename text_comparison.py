@@ -74,20 +74,12 @@ def chunk_similarity(sentence, location, target):
     return sim, chunk
 
 
-def find_similar_part(sentence, chunk):
-    case = len(sentence) - len(chunk)
-    sims = {}
-
-    for i in case:
-        chunk = " ".join(sentence[i:len(chunk)+2])
-
-
 def update(text):
     idx_list = [[-1, -1]]
     unknown = []
     stt_text = load_txt(STT_PATH)  # [idx, start, end, sentence]
 
-    loc_list = []]
+    loc_list = []
     target_idx = 1
     sent_idx = 0
     chunk_loc= 0
