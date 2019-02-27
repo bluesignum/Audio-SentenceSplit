@@ -90,12 +90,15 @@ def update(text, stt_text, intervals):
     breaker = False
     sent_idx = 0
     init = 0
+    point = 0
 
     # Analyze sentence in order
     while sent_idx < len(text):
         sentence = sentence_split(text[sent_idx].split(",", 1)[1])  # word list in a sentence to compare
         loc, on = 0, 0
         l = []
+        init += point
+        point = 0
 
         print("original sentence number:{}, length:{}".format(sent_idx, len(sentence)))
         for i in range(len(stt_text)):                                   # Start to compare chunk to sentence in order
@@ -104,6 +107,7 @@ def update(text, stt_text, intervals):
             key, sim = find_similar_part(sentence, chunk)
 
             if sim >= 0.6:                                          # 비슷한 덩어리를 문장에서 찾았을 때
+                point += 1
                 print("chunk is similar!")
                 for a, word in enumerate(chunk):
                     idx = similar_word_idx(sentence, word, key, len(chunk))
@@ -119,7 +123,6 @@ def update(text, stt_text, intervals):
                         break
                     elif idx != -1:                                 # neither start nor end
                         findings[idx] = a
-                init += 1
 
                 print(stt_text)
                 if breaker: break
