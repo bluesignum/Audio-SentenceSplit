@@ -1,13 +1,38 @@
-# Hello
+# Audio Split line by line
+(should be ready to use Google Speech Recognition API)
 
-original_text.py : Split text file by ., ?, ! and save sentences in a new text file.
+### 1. Prepare data and directory
+make a directory for the audio
+*Title and the ROOT below should be the same
+    
+    mkdir ./{title} ./{title}/audio ./{title}/pre_audio
 
+change the name of files and locate them in the directory above (./{title})
 
-google_speech.py : use Google Speech Recognition API
+    - original text file: {title}_ORIGINAL.txt
+    
+      (eg. androcles-shorter_ORIGINAL.txt)
+    
+    - original audio file: {title}.mp3  
+    
+      (eg. androcles-shorter.mp3)
+      (Must use single channel (mono) audio)
+  
+### 2. Change ROOT in main.py
+    ROOT = "title"
 
+### 3. Run main.py
+    python main.py
+    
+Final audio files will be created in audio directory
 
-split_audio.py : Split single audio into small chunks by silent intervals and make corresponding text using Google API
+### Caution
+* This code cannot make sentence audio files perfectly. (about maximum 85% can be processed)
 
+* Success rate can be lower if the audio file has more sentences than that of the text file.
 
-new_audio.py : Compare short text corresponding to small chunks with sentence text,
-               and create new audio files for each sentence
+* Add . after the title of the text if there is any. (To split sentences correctly)
+____________________________________________________
+### Future Work
+-> check the unknown chunks depending on its number
+-> Process Bar (tqdm)

@@ -1,4 +1,5 @@
 import os
+import re
 from difflib import SequenceMatcher
 from pydub import AudioSegment
 
@@ -29,6 +30,12 @@ def blank_intervals(txt):
     return intervals
 
 
+def text_processing(txt):
+    txt = re.sub('[^A-Za-z0-9]+', '', txt)
+
+    return txt
+
+
 def sentence_split(sentence):
     result = sentence.lstrip().replace("\n", "").split(" ")
 
@@ -40,7 +47,7 @@ def similar_word_idx(sentence, target_word, loc, end):
     candidate_prob = -1.0
     new_sentence = sentence[loc:loc+end+1]
     for idx, word in enumerate(new_sentence):
-        prob = similarity(new_sentence[idx], target_word)
+        prob = similarity(text_processing(new_sentence[idx]), target_word)
         if prob > candidate_prob:
             candidate_prob = prob
             candidate_idx = idx + loc
@@ -144,7 +151,7 @@ def update(text, stt_text, intervals):
 
 
 def elaboration(intervals):
-    padding = 600
+    padding = 500
     # String to integer
     for idx in range(len(intervals)):
         intervals[idx][0] = int(intervals[idx][0])
@@ -165,12 +172,16 @@ def audio_update(audio_path, new_audio_path, intervals, out_ext="wav"):
     padding = 100
     audio = AudioSegment.from_file(audio_path)
     filename = os.path.basename(audio_path).split('.', 1)[0]
+    success = 0
 
-    for idx, (start_idx, end_idx) in enumerate(intervals[:]):
+    for idx, (start_idx, end_idx) in enumerate(intervals):
         if start_idx != -1 and end_idx != -1:
-            target_audio_path = new_audio_path + "{}.{:04d}.{}".format(filename, idx, out_ext)
+            success += 1
+            target_audio_path = new_audio_path + "{}.{:>4d}.{}".format(filename, idx, out_ext)
             segment = audio[start_idx-padding:end_idx+padding]
             segment.export(target_audio_path, out_ext)
+
+    print("Success: {} files! (out of {})".format(success, len(intervals)))
 
 
 def final_update(original_txt_path, stt_path, audio_path, new_audio_path):
@@ -187,10 +198,10 @@ def final_update(original_txt_path, stt_path, audio_path, new_audio_path):
     audio_update(audio_path, new_audio_path, intervals)
 
 
-if __name__ == "__main__":
-    STT_PATH = "./androcles-shorter_STT.txt"
-    ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
-    AUDIO_PATH = "./androcles-shorter.mp3"
-    NEW_AUDIO_PATH = "./audio/"
-
-    final_update(ORIGINAL_TXT_PATH, STT_PATH, AUDIO_PATH, NEW_AUDIO_PATH)
+# if __name__ == "__main__":
+#     STT_PATH = "./androcles-shorter_STT.txt"
+#     ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
+#     AUDIO_PATH = "./androcles-shorter.mp3"
+#     NEW_AUDIO_PATH = "./audio/"
+#
+#     final_update(ORIGINAL_TXT_PATH, STT_PATH, AUDIO_PATH, NEW_AUDIO_PATH)

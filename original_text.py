@@ -1,6 +1,6 @@
 import re
 
-DEBUG = 1
+DEBUG = 0
 
 
 def text_processing(txt):
@@ -51,7 +51,7 @@ def text_load_and_save(path, new_text_path):
 
     with open(new_text_path, 'w') as f:
         for idx in range(len(txt)):
-            f.write("{0:04d}, ".format(idx) + txt[idx] + "\n")
+            f.write("{0:>4d}, ".format(idx) + txt[idx] + "\n")
 
     if DEBUG:
         print("Complete!")

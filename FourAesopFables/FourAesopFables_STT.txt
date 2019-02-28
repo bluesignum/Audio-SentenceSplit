@@ -1,0 +1,175 @@
+   0,145,2088,Aesop's Fables
+   1,2828,4333,hello this is Natasha
+   2,4986,10173,and Prince Bertie the frog has asked me to bring you some animal stories by Aesop
+   3,11147,15334,it's up was famous for writing stories with a lesson who tomorrow
+   4,16269,18047,most of his fables are all the show
+   5,18708,19478,Sky Suites
+   6,20376,22200,I'm so his four of them
+   7,23508,26628,booties ask the animals themselves to tell the stories
+   8,27265,28239,and the first one
+   9,28551,30851,is told by a rat from India
+  10,31677,33186,it's cold the rat
+  11,33538,34678,and the Elephant
+  12,36537,39813,some people say that butts up ugly creatures
+  13,40520,44996,when they seen a rat running along Lego
+  14,46867,48136,I don't know about you
+  15,48637,51841,I've always thought this was rather rude
+  16,52812,55863,Roots can have hard feelings too you know
+  17,57281,58102,in any case
+  18,58849,62005,I catch sight of my reflection in the Stream
+  19,62881,64681,I think I'm rather cute
+  20,66081,67980,with just whistling
+  21,68545,71563,I was trotting along the Kings Highway
+  22,71905,74078,in my sweet little way
+  23,74688,76406,when I heard a great commotion
+  24,76973,82321,on the road at the Hat who or what is causing all that fuss I want it
+  25,83633,84626,when I Court close
+  26,85352,87091,I saw the king himself
+  27,87435,91292,riding along On Top of the great fat lump of an elephant
+  28,91705,94819,the crowd of onlookers with and I
+  29,95212,100568,full of admiration for that stupid Beast with a nose that's far to Bigfoot
+  30,100913,101325,space
+  32,103649,105095,uglier than me
+  33,105665,106438,I thought
+  34,107791,110812,I'm so I stopped to spring up and down and say
+  35,111867,112904,hey everyone
+  36,113498,114990,why not to look at me
+  37,115706,119577,I'm such a cutie pie
+  38,120345,124478,I could join the king's household and be a Royal Rat
+  39,125099,127425,if that was Eddie Justice in the world
+  40,129356,131289,nobody noticed me
+  41,132227,135613,they were all too busy ogling that stupid elephant
+  42,136850,138434,and little did I know
+  43,139077,141750,but riding behind the elephant in the carriage
+  44,142115,143573,is the princess
+  45,144132,147511,and she was holding a beastly Cat In Her Arms
+  46,148192,152486,funny quotes cited me the Cat Lets out to the carriage and started to chase me
+  47,153305,158904,I had to run for my life I'm just popped out of hole in time before the cat could eat me up
+  48,159594,164871,and so now I've changed my mind about wanting people to notice me and admire me
+  49,166317,171912,I've decided that sometimes it's far better not to draw attention to yourself
+  50,173109,174865,just to get home quietly
+  51,175397,176746,with your own business
+  52,179564,184100,and that was the Fable of the Rat and the Elephant by ESOP
+  53,185032,191347,the next Fable is cooled the grasshopper and the Ants and it's told by the grasshopper
+  54,192275,197312,I've been artist and as everyone knows I just thought you were asleep at a park
+  55,198076,200506,I don't mind about that
+  56,201317,206065,when does sun is shining I sit on my favorite blade of grass and
+  57,206377,208783,Champa music for everyone to listen to
+  58,209570,210968,I have lots of friends
+  59,211318,214003,together we found an orchestra
+  60,214770,216375,everyone loves a music
+  61,216891,218840,but it makes them feel
+  62,220076,221225,everyone
+  63,222036,224877,is a family of ants never stop to listen
+  64,225498,228991,they take themselves too seriously for music or enjoyment
+  65,229662,231089,all they do is work
+  66,231421,232305,work work
+  67,233017,234529,when the sun is shining
+  68,235139,236292,hey you answer
+  69,236650,237457,I said to that
+  70,238425,240133,it's a lovely Summer's Day
+  71,240886,242661,why don't you stop for a little while
+  72,243028,245588,listen to my sweet music
+  73,246821,248230,no time to stop
+  74,249024,249919,one of them said
+  75,250249,251047,hunting away
+  76,252190,255120,but far too busy stocking up food for winter
+  77,257075,258250,and months went by
+  78,258762,261081,and the days got shot down Khalid
+  79,261977,265418,shivering so much that I couldn't even see
+  80,266206,268312,how to frost was on the ground
+  81,268910,271112,and I couldn't even find a crime to eat
+  82,271849,273524,I was so hungry
+  83,274701,277938,so I went to see that beautiful family and sunset
+  84,279038,280132,candy says
+  85,280673,283102,I'm a poor hungry musician
+  86,283630,286766,spare me a few Crumbs from your store food
+  87,287862,289297,but do you know what
+  88,289736,292557,those ants just turn their noses up at me
+  89,293265,295270,he was so stingy
+  90,295602,298684,but they wouldn't even share any of that food with me
+  91,299774,300861,when
+  92,301451,303869,I have to go hungry this winter
+  94,305589,306448,in the new year
+  95,306858,308223,Anika resolution
+  96,309279,310731,when the times are good
+  97,311428,313528,I remember to save some food
+  98,313971,314986,for a rainy day
+  99,317970,322627,and that was the story of the grasshopper and the Ants by ESOP
+ 100,323885,326047,do you think the grasshopper was lazy
+ 101,327747,329100,what I think he was
+ 102,329664,334191,but I also think grasshoppers sound very cheerful when they playing that music
+ 103,335815,339278,there's ants web hats just a bit too serious
+ 104,340794,342933,we still got two more stories to go
+ 105,343610,345129,and the next one is told by
+ 107,346504,347302,and it's cool
+ 108,347964,348842,the fox
+ 109,349273,350086,and the crow
+ 110,351252,355712,I bet you called gas would I like to eat best of all
+ 111,356895,361955,yes I knew that you would say that folks is like to eat hens best
+ 112,362440,364453,and stolen ones that
+ 113,365430,369000,and I don't mind admitting that I wouldn't ever say no
+ 114,369403,372450,to a nice chicken once in awhile
+ 115,373953,381316,but not many people know that I appreciate even more than chicken
+ 116,382434,383900,is it nice
+ 117,384201,384861,she
+ 118,385208,387026,once in awhile
+ 119,388638,389776,weather today
+ 120,390244,397264,I ate a wonderfully rich and creamy slice of cheddar off my breakfast
+ 121,398356,400404,it was kindly given to me
+ 122,400939,404255,buy a beautiful black feather boa
+ 123,404669,408530,whose voice is even more wonderful than her looks
+ 124,409677,415717,I don't mean the sky dog or a fancy bird of paradise
+ 125,416140,418572,I'm talking about Miss
+ 127,420400,421497,hop in the tree
+ 128,422550,424964,it was a fine Bright Morning
+ 129,425328,430565,and I was following my shop knows through the woods in search of a bite to eat
+ 130,431466,434839,what I quoted cheesy smell on the breeze
+ 131,435792,437875,I looked up into the tree
+ 132,438452,445050,LeBron schiesser Miss Crow looking terribly pleased with herself
+ 133,445970,450092,she has a large piece of cheese
+ 134,451087,451860,it was Stone
+ 135,452448,453443,no.
+ 136,453968,455643,from the farm over the hill
+ 137,456508,460786,I'm not one to go around accusing people of this
+ 138,461923,464625,and so I cool down my neighbor and said
+ 139,465696,472050,good morning Miss Crowe you are looking very lovely today if I may say so
+ 140,473065,478564,and Miss Crabb had a one side and looked at me with her beady little eyes
+ 141,479391,483999,but she kept her beak Omni closed on the cheese
+ 142,485301,489067,such a Charming creature
+ 143,489911,491448,I'm used to my cell
+ 144,492584,496905,making sure nevertheless that she could you over here
+ 145,498328,503679,such a find sheen on those one dress black feathers
+ 146,504360,508113,what Wings what legs and the beak
+ 147,508548,510293,exquisite
+ 148,511307,516428,hi could see that Miss Crowe was paying close attention to my words
+ 149,516929,520408,even though she was pretending fso high note to hear
+ 150,521854,526990,so I gazed up at the tree with admiration and love in my eyes and said
+ 151,527716,532557,my heart is Smitten by this wonderful bad
+ 152,533167,535650,if only I could hear her voice
+ 153,536091,542098,I'm sure that's such a child and creature messing most sweetly
+ 154,542938,545904,if I could hear but one line a song
+ 155,546540,547645,I would hate
+ 156,548037,550657,as the princess of the forest
+ 158,552529,553171,and now
+ 159,553619,556116,I could see my words had hit home
+ 160,557014,558836,swelling with pride
+ 161,559366,566946,Miss Crowe pasta / feathers and began to sing the most lovely music I had ever heard
+ 163,572198,582049,well right now I know that you are saying that Miss crows voice is not exactly star quality but to me.
+ 165,584469,587503,was just the sound I've been waiting for
+ 166,588278,591154,because as soon as she open Tubi
+ 167,592145,594154,cheese fell to the ground
+ 168,594645,597905,dice looked up my breakfast
+ 169,599224,601468,which only goes to show
+ 170,602269,603912,LED flasher relay
+ 171,604234,606424,will get you everywhere
+ 172,608133,615576,and that was the story of the Fox and The Crow and the moral is just too true I'm afraid
+ 173,616916,620127,the next Fable it's a bit of a scary warning
+ 174,620822,622688,it's told by a little mouse
+ 175,623228,625222,and you will also hear from his mother
+ 176,626024,626736,it's cool
+ 177,627237,628466,the little mouse
+ 179,630614,633368,I could message you
+ 180,633923,640372,I just escaped by a whisker from the most frightful scary monster that that ever was
+ 182,642177,644950,I was strolling along minding my own business when
+ 183,645306,649807,just that they looked into the farmyard I saw two strange creatures

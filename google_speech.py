@@ -39,7 +39,7 @@ def audio_processing(path, intervals, root):
     if not trans is None:
         data = "{},{},{},{}\n".format(line_number, intervals[0], intervals[1], trans)
 
-        if os.path.exists(txt_path):
+        if os.path.exists(root + txt_path):
             with open(root + txt_path, 'a') as f:
                 f.write(data)
         else:
