@@ -37,7 +37,7 @@ Final audio files will be created in audio directory
 
 * If you want to observe the analyzing process, change DEBUG in each python file to 1 (Currently 0)
 ____________________________________________________
-### Future Work
+### Future Works
 * Solve the problem of having two candidate indices
   (eg. when 'me' appears twice in a sentence)
   
