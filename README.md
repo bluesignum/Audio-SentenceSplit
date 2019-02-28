@@ -6,8 +6,7 @@
     gcloud auth login
     
 ### 1. Prepare data and directory
-make a directory for the audio
-*Title and the ROOT below should be the same
+Make a directory for the audio 
     
     mkdir ./{title} ./{title}/audio ./{title}/pre_audio
 
@@ -20,6 +19,8 @@ change the name of files and locate them in the directory above (./{title})
       (eg. androcles-shorter.mp3)
   
 ### 2. Change ROOT in main.py
+***Title above and the ROOT below should be the same***
+
     ROOT = "title"
 
 ### 3. Run main.py
