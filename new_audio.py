@@ -47,7 +47,7 @@ def similar_word_idx(sentence, target_word, loc, end):
     candidate_prob = -1.0
     new_sentence = sentence[loc:loc+end+1]
     for idx, word in enumerate(new_sentence):
-        prob = similarity(text_processing(new_sentence[idx]), target_word)
+        prob = similarity(new_sentence[idx], target_word)
         if prob > candidate_prob:
             candidate_prob = prob
             candidate_idx = idx + loc
@@ -114,6 +114,7 @@ def update(text, stt_text, intervals):
                 if DEBUG: print("chunk is similar!")
                 for a, word in enumerate(chunk):
                     idx = similar_word_idx(sentence, word, key, len(chunk))
+                    print("location: {}".format(idx))
                     if idx == 0 and on == 0:
                         intervals[sent_idx][0] = stt_data[1]        # update start
                         on = 1
@@ -128,7 +129,7 @@ def update(text, stt_text, intervals):
 
                 if breaker: break
 
-                l = [n for n in findings.keys() if 0 < n < key+len(chunk)]
+                l = [n for n in findings.keys() if 0 < n <= key+len(chunk)]
                 if len(l) > 0 : loc = max(l) + len(chunk) - findings[max(l)]
                 if DEBUG: print("final location: {}".format(loc))
 
@@ -177,7 +178,7 @@ def audio_update(audio_path, new_audio_path, intervals, out_ext="wav"):
     for idx, (start_idx, end_idx) in enumerate(intervals):
         if start_idx != -1 and end_idx != -1:
             success += 1
-            target_audio_path = new_audio_path + "{}.{:>4d}.{}".format(filename, idx, out_ext)
+            target_audio_path = new_audio_path + "{}.{:04d}.{}".format(filename, idx, out_ext)
             segment = audio[start_idx-padding:end_idx+padding]
             segment.export(target_audio_path, out_ext)
 
@@ -197,11 +198,3 @@ def final_update(original_txt_path, stt_path, audio_path, new_audio_path):
 
     audio_update(audio_path, new_audio_path, intervals)
 
-
-# if __name__ == "__main__":
-    STT_PATH = "./androcles-shorter_STT.txt"
-    ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
-    AUDIO_PATH = "./androcles-shorter.mp3"
-    NEW_AUDIO_PATH = "./audio/"
-
-    final_update(ORIGINAL_TXT_PATH, STT_PATH, AUDIO_PATH, NEW_AUDIO_PATH)

@@ -33,10 +33,13 @@ Final audio files will be created in audio directory
 ### Caution
 * This code cannot make sentence audio files perfectly. (about maximum 85% can be processed)
 
-* Success rate can be lower if the audio file has more sentences than that of the text file.
+* Success rate can be dramatically lower if the audio file has more sentences than that of the text file.
 
 * Add . after the title of the text if there is any. (To split sentences correctly)
 ____________________________________________________
 ### Future Work
 -> check the unknown chunks depending on its number
+
+-> update once more with the way of increasing the index of chunk, rather than sentence
+
 -> Process Bar (tqdm)

@@ -1,98 +1,107 @@
-0000, The Rat and the Elephant - Some people say that rats are ugly creatures.
-0001, When they see a rat running along, they go ee-yuck!
-0002, Well I don’t know about you, but I’ve always thought that this was rather rude.
-0003, Rats can have hurt feelings too you know!
-0004, In any case, when I catch sight of my reflection in a stream, I think I’m rather cute.
-0005, Just recently, I was trotting along the King’s Highway, in my sweet little way, when I heard a great commotion on the road up ahead.
-0006, Who or what is causing all that fuss?
-0007, I wondered.
-0008, When I got closer, I saw the King himself, riding along on top of a great fat lump of an elephant.
-0009, The crowd of onlookers were ooo-ing and aah-ing full of admiration for that stupid beast with a nose that’s far too big for her face.
-0010, She’s much uglier than me, I thought.
-0011, So I started to spring up and down and say: “Hey everyone!
-0012, Why not look at me?
-0013, I’m such a cutie-pie!
-0014, I could join the King’s household and be a royal rat, if only there was any justice in the world.”
-0015, At first, nobody noticed me.
-0016, They were all too busy ogling that stupid elephant.
-0017, Little did I know that riding behind the elephant in a carriage, was the princess, and she was holding a beastly cat in her arms.
-0018, When he caught sight of me, the cat leapt out of the carriage and started to chase me.
-0019, I had to run for my life, and popped down a hole just in time before the cat could eat me up.
-0020, Now I’ve changed my mind about wanting people to notice me and admire me.
-0021, I’ve decided that sometimes, it’s far better not to draw attention to yourself, but just to get on quietly with your own business.
-0022, The Grasshopper and the Ants.
-0023, grasshopperI’m an artist, and as everyone knows, artists are usually rather poor.
-0024, Normally, I don’t mind about that.
-0025, When the sun is shining, I sit on my favourite blade of grass and play music for everyone to listen to.
-0026, I have lots of friends, and together we’ve formed an orchestra.
-0027, Everyone loves our music and says how cheerful it makes them feel – well almost everyone.
-0028, There’s a family of ants who never stop to listen.
-0029, They take themselves far too seriously for music or enjoyment.
-0030, All they do is work, work, work – even when the sun is shining.
-0031, “Hey You Ants,” I said to them.
-0032, “It’s a lovely summer’s day.
-0033, Why don’t you rest your feet for a while, and listen to my sweet music?”
-0034, “No time to stop,” one of them said, panting away.
-0035, “We’re far too busy stocking up food for winter.”
-0036, The months went by, and the days got shorter and colder.
-0037, I was shivering so much that I couldn’t even sing.
-0038, A hard frost was on the ground, and there wasn’t a crumb to eat.
-0039, I was so hungry!
-0040, So I went to see that busy family of ants and said: “Please Sirs, I’m a poor starving musician.
-0041, Spare me a few crumbs from your store of food.”
-0042, Do you know what?
-0043, Those ants just turned their noses up at me.
-0044, They were so stingy that they wouldn’t share any of their food.
-0045, Oh Well, I’ll just have to go hungry this winter.
-0046, In the New Year, I’ll make a resolution.
-0047, When the times are good, I’ll remember to save some food for a rainy day.
-0048, The Fox and the Crow - foxI bet you can’t guess what I like to eat best of all?
-0049, Yes, I knew that you would say that foxes like to eat hens best, and stolen ones at that.
-0050, I don’t mind admitting that I wouldn’t ever say no to a nice fat chicken wing once in a while.
-0051, But not many people know that what foxes appreciate even more than chicken, is a nice piece of cheese once in a while.
-0052, Well today I ate a wonderfully rich and creamy slice of cheddar for my breakfast.
-0053, It was kindly given to me by a beautiful black-feathered bird whose voice is even more wonderful than her looks.
-0054, No, I don’t mean a sky-lark, or a fancy bird of paradise.
-0055, I’m talking about Miss Crow, up in that tree.
-0056, It was a fine bright morning, and I was following my sharp nose through the woods in search of a bite to eat, when I caught a cheesy smell on the breeze.
-0057, I looked up into the tree and there on the branch I saw Miss Crow, looking terribly pleased with herself, for in her beak she held a large piece of cheese.
-0058, It was stolen, no doubt, from the farmer over the hill, but I’m not one to go around accusing people of this and that.
-0059, I called up to my neighbour and said: “Good morning Miss Crow, you are looking very lovely today, if I may say so.”
-0060, Miss Crow cocked her head on one side and looked at me with her beady little eye, but she kept her beak firmly closed on the cheese.
-0061, “Such a charming creature,” I mused to myself, making sure nevertheless that she could overhear.
-0062, “Such a fine sheen on those wonderous black feathers.
-0063, What wings!
-0064, What legs!
-0065, And that beak, exquisite!”
-0066, I could see that Miss Crow was paying close attention to my words, even though she was pretending ever so hard not to hear.
-0067, So I gazed up at the tree with admiration and love in my eyes and said: “Ah, my heart is smitten by this wonderful bird.
-0068, If only I could hear her voice.
-0069, I’m sure that such a charming creature must sing most sweetly!
-0070, If I could but hear one line of her song, I would hail her as the Princess of The Forest!”
-0071, Now I could see my words had hit home.
-0072, Swelling with pride, Miss Crow puffed up her feathers and began to sing the most lovely music I have ever heard.
-0073, “CAAWWWWWWWWW!”
-0074, Well alright, I know that you are saying that Miss Crow’s voice is not exactly star quality, but to me that “cawww!”
-0075, was just the sound that I’d been waiting for.
-0076, Because as soon as she opened her beak, the cheese fell to the ground and I snapped up my breakfast.
-0077, Which only goes to show that: Flattery will get you everywhere.
-0078, The Little Mouse.
-0079, mouse“Mummy!
-0080, Mummy!
-0081, Thank goodness it’s you!
-0082, I’ve just escaped by a whisker from the most frightful scary monster that there ever was!”
-0083, “Just now, I was strolling along minding my own business when, as I turned into the farm yard, I saw two strange creatures.
-0084, One of them looked very kind and fluffy, and had lovely whiskers, but the other was a scary, scary monster!
-0085, Woww!”
-0086, “On top of his head and in front of his neck hung pieces of red raw meat.
-0087, He walked about this way and that, tearing up the ground with his toes, and beating his arms against his sides.
-0088, The moment he caught sight of me he opened his pointed mouth as if to swallow me, and then he let out a cry that frightened me almost to death.”
-0089, “If it had not been for that terrible monster, I would have made friends with the pretty creature, who looked so good and gentle.
-0090, He had thick, velvety fur, a soft face, and his eyes were bright and shining.
-0091, As he looked at me he waved his fine long tail and smiled.”
-0092, “I am sure he was just about to speak to me when the monster I have told you about let out a screaming yell, and I ran for my life.”
-0093, Mother Mouse: “My little mouse, that gentle creature you saw was none other than the cat.
-0094, Under his kindly appearance, he bears a grudge against every one of us.
-0095, The other was nothing but the cockrel, who wouldn’t harm you in the least.
-0096, As for the cat, he eats us.
-0097, So be thankful, my child, that you escaped with your life, and as long as you live, never judge people by their looks.”
+0000, Aesop's Fables.
+0001, Hello, this is Natasha.
+0002, And Prince Bertie the frog has asked me to bring you some animal stories by Aesop.
+0003, Aesop was famous for writing stories with a lesson called a moral.
+0004, Most of his fables were wrote short, but very sweat.
+0005, And so here is four of them.
+0006, Bertie has asked the animals themselves to tell the story, and the First one is told by a rat from India.
+0007, It's called The Rat and the Elephant.
+0008, Some people say that rats are ugly creatures.
+0009, When they see a rat running along, they go ee-yuck!
+0010, Well I don’t know about you, but I’ve always thought that this was rather rude.
+0011, Rats can have hurt feelings too you know!
+0012, In any case, when I catch sight of my reflection in a stream, I think I’m rather cute.
+0013, Just recently, I was trotting along the King’s Highway, in my sweet little way, when I heard a great commotion on the road up ahead.
+0014, Who or what is causing all that fuss?
+0015, I wondered.
+0016, When I got closer, I saw the King himself, riding along on top of a great fat lump of an elephant.
+0017, The crowd of onlookers were ooo-ing and aah-ing full of admiration for that stupid beast with a nose that’s far too big for her face.
+0018, She’s much uglier than me, I thought.
+0019, So I started to spring up and down and say: “Hey everyone!
+0020, Why not look at me?
+0021, I’m such a cutie-pie!
+0022, I could join the King’s household and be a royal rat, if only there was any justice in the world.”
+0023, At first, nobody noticed me.
+0024, They were all too busy ogling that stupid elephant.
+0025, Little did I know that riding behind the elephant in a carriage, was the princess, and she was holding a beastly cat in her arms.
+0026, When he caught sight of me, the cat leapt out of the carriage and started to chase me.
+0027, I had to run for my life, and popped down a hole just in time before the cat could eat me up.
+0028, Now I’ve changed my mind about wanting people to notice me and admire me.
+0029, I’ve decided that sometimes, it’s far better not to draw attention to yourself, but just to get on quietly with your own business.
+0030, The Grasshopper and the Ants.
+0031, grasshopperI’m an artist, and as everyone knows, artists are usually rather poor.
+0032, Normally, I don’t mind about that.
+0033, When the sun is shining, I sit on my favourite blade of grass and play music for everyone to listen to.
+0034, I have lots of friends, and together we’ve formed an orchestra.
+0035, Everyone loves our music and says how cheerful it makes them feel – well almost everyone.
+0036, There’s a family of ants who never stop to listen.
+0037, They take themselves far too seriously for music or enjoyment.
+0038, All they do is work, work, work – even when the sun is shining.
+0039, “Hey You Ants,” I said to them.
+0040, “It’s a lovely summer’s day.
+0041, Why don’t you rest your feet for a while, and listen to my sweet music?”
+0042, “No time to stop,” one of them said, panting away.
+0043, “We’re far too busy stocking up food for winter.”
+0044, The months went by, and the days got shorter and colder.
+0045, I was shivering so much that I couldn’t even sing.
+0046, A hard frost was on the ground, and there wasn’t a crumb to eat.
+0047, I was so hungry!
+0048, So I went to see that busy family of ants and said: “Please Sirs, I’m a poor starving musician.
+0049, Spare me a few crumbs from your store of food.”
+0050, Do you know what?
+0051, Those ants just turned their noses up at me.
+0052, They were so stingy that they wouldn’t share any of their food.
+0053, Oh Well, I’ll just have to go hungry this winter.
+0054, In the New Year, I’ll make a resolution.
+0055, When the times are good, I’ll remember to save some food for a rainy day.
+0056, The Fox and the Crow.
+0057, foxI bet you can’t guess what I like to eat best of all?
+0058, Yes, I knew that you would say that foxes like to eat hens best, and stolen ones at that.
+0059, I don’t mind admitting that I wouldn’t ever say no to a nice fat chicken wing once in a while.
+0060, But not many people know that what foxes appreciate even more than chicken, is a nice piece of cheese once in a while.
+0061, Well today I ate a wonderfully rich and creamy slice of cheddar for my breakfast.
+0062, It was kindly given to me by a beautiful black-feathered bird whose voice is even more wonderful than her looks.
+0063, No, I don’t mean a sky-lark, or a fancy bird of paradise.
+0064, I’m talking about Miss Crow, up in that tree.
+0065, It was a fine bright morning, and I was following my sharp nose through the woods in search of a bite to eat, when I caught a cheesy smell on the breeze.
+0066, I looked up into the tree and there on the branch I saw Miss Crow, looking terribly pleased with herself, for in her beak she held a large piece of cheese.
+0067, It was stolen, no doubt, from the farmer over the hill, but I’m not one to go around accusing people of this and that.
+0068, I called up to my neighbour and said: “Good morning Miss Crow, you are looking very lovely today, if I may say so.”
+0069, Miss Crow cocked her head on one side and looked at me with her beady little eye, but she kept her beak firmly closed on the cheese.
+0070, “Such a charming creature,” I mused to myself, making sure nevertheless that she could overhear.
+0071, “Such a fine sheen on those wonderous black feathers.
+0072, What wings!
+0073, What legs!
+0074, And that beak, exquisite!”
+0075, I could see that Miss Crow was paying close attention to my words, even though she was pretending ever so hard not to hear.
+0076, So I gazed up at the tree with admiration and love in my eyes and said: “Ah, my heart is smitten by this wonderful bird.
+0077, If only I could hear her voice.
+0078, I’m sure that such a charming creature must sing most sweetly!
+0079, If I could but hear one line of her song, I would hail her as the Princess of The Forest!”
+0080, Now I could see my words had hit home.
+0081, Swelling with pride, Miss Crow puffed up her feathers and began to sing the most lovely music I have ever heard.
+0082, “CAAWWWWWWWWW!”
+0083, Well alright, I know that you are saying that Miss Crow’s voice is not exactly star quality, but to me that “cawww!”
+0084, was just the sound that I’d been waiting for.
+0085, Because as soon as she opened her beak, the cheese fell to the ground and I snapped up my breakfast.
+0086, Which only goes to show that: Flattery will get you everywhere.
+0087, The Little Mouse.
+0088, mouse“Mummy!
+0089, Mummy!
+0090, Thank goodness it’s you!
+0091, I’ve just escaped by a whisker from the most frightful scary monster that there ever was!”
+0092, “Just now, I was strolling along minding my own business when, as I turned into the farm yard, I saw two strange creatures.
+0093, One of them looked very kind and fluffy, and had lovely whiskers, but the other was a scary, scary monster!
+0094, Woww!”
+0095, “On top of his head and in front of his neck hung pieces of red raw meat.
+0096, He walked about this way and that, tearing up the ground with his toes, and beating his arms against his sides.
+0097, The moment he caught sight of me he opened his pointed mouth as if to swallow me, and then he let out a cry that frightened me almost to death.”
+0098, “If it had not been for that terrible monster, I would have made friends with the pretty creature, who looked so good and gentle.
+0099, He had thick, velvety fur, a soft face, and his eyes were bright and shining.
+0100, As he looked at me he waved his fine long tail and smiled.”
+0101, “I am sure he was just about to speak to me when the monster I have told you about let out a screaming yell, and I ran for my life.”
+0102, Mother Mouse: “My little mouse, that gentle creature you saw was none other than the cat.
+0103, Under his kindly appearance, he bears a grudge against every one of us.
+0104, The other was nothing but the cockrel, who wouldn’t harm you in the least.
+0105, As for the cat, he eats us.
+0106, So be thankful, my child, that you escaped with your life, and as long as you live, never judge people by their looks.”
