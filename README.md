@@ -10,7 +10,7 @@ Make a directory for the audio
     
     mkdir ./{title} ./{title}/audio ./{title}/pre_audio
 
-change the name of files and locate them in the directory above (./{title})
+Change the name of files and locate them in the directory above (./{title})
 
     - original text file: {title}_ORIGINAL.txt
       (eg. androcles-shorter_ORIGINAL.txt)
