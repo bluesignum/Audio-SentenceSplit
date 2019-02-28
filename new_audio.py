@@ -3,7 +3,7 @@ import re
 from difflib import SequenceMatcher
 from pydub import AudioSegment
 
-DEBUG = 0
+DEBUG = 1
 
 
 def load_txt(path):
@@ -199,9 +199,9 @@ def final_update(original_txt_path, stt_path, audio_path, new_audio_path):
 
 
 # if __name__ == "__main__":
-#     STT_PATH = "./androcles-shorter_STT.txt"
-#     ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
-#     AUDIO_PATH = "./androcles-shorter.mp3"
-#     NEW_AUDIO_PATH = "./audio/"
-#
-#     final_update(ORIGINAL_TXT_PATH, STT_PATH, AUDIO_PATH, NEW_AUDIO_PATH)
+    STT_PATH = "./androcles-shorter_STT.txt"
+    ORIGINAL_TXT_PATH = "./androcles-shorter_ORIGINAL_SENTENCE.txt"
+    AUDIO_PATH = "./androcles-shorter.mp3"
+    NEW_AUDIO_PATH = "./audio/"
+
+    final_update(ORIGINAL_TXT_PATH, STT_PATH, AUDIO_PATH, NEW_AUDIO_PATH)

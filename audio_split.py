@@ -60,7 +60,7 @@ def split_on_silence_with_pydub(
         start_idx = max(0, start_idx - keep_silence)
         end_idx += keep_silence
 
-        target_audio_path = "{}/pre_audio/{}.{:>4d}.{}".format(os.path.dirname(audio_path), filename, idx, out_ext)
+        target_audio_path = "{}/pre_audio/{}.{:04d}.{}".format(os.path.dirname(audio_path), filename, idx, out_ext)
         segment = audio[start_idx:end_idx]
         segment.export(target_audio_path, out_ext)
         audio_paths.append(target_audio_path)

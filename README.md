@@ -1,6 +1,10 @@
 # Audio Split line by line
 (should be ready to use Google Speech Recognition API)
 
+### 0. Prepare Google API 
+
+    gcloud auth login
+    
 ### 1. Prepare data and directory
 make a directory for the audio
 *Title and the ROOT below should be the same
