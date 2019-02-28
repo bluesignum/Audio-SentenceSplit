@@ -3,7 +3,7 @@ import re
 from difflib import SequenceMatcher
 from pydub import AudioSegment
 
-DEBUG = 1
+DEBUG = 0
 
 
 def load_txt(path):
@@ -49,7 +49,7 @@ def similar_word_idx(sentence, target_word, loc, end):
     print("new sentence length: {}".format(len(new_sentence)))
     for idx, word in enumerate(new_sentence):
         prob = similarity(new_sentence[idx], target_word)
-        if prob > candidate_prob and len(word) > 3:
+        if prob > candidate_prob:
             candidate_prob = prob
             candidate_idx = idx + loc
 
@@ -131,10 +131,6 @@ def update(text, stt_text, intervals):
                 l = [n for n in findings.keys() if 0 < n <= key+len(chunk)]
                 if len(l) > 0 : loc = max(l) + len(chunk) - findings[max(l)]
                 if DEBUG: print("final location: {}".format(loc))
-                if loc >= len(sentence):
-                    intervals[sent_idx][1] = stt_data[2]
-                    sent_idx += 1
-                    break
 
             else:                                                   # NOT FOUND
                 unknowns.append(",".join(stt_data))
@@ -147,9 +143,9 @@ def update(text, stt_text, intervals):
                 loc += len(chunk)
                 if DEBUG: print("current location: {}\n".format(loc))
 
-                if loc >= len(sentence):
-                    sent_idx += 1
-                    break
+            if loc >= len(sentence):
+                sent_idx += 1
+                break
 
     return intervals, unknowns, stt_text
 
