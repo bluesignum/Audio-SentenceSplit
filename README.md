@@ -33,7 +33,7 @@ Final audio files will be created in audio directory
 
 * Success rate can be dramatically lower if the audio file has more sentences than that of the text file.
 
-* Add . after the title of the text if there is any. (To split sentences correctly)
+* Add . after the title of the text IN THE TEXT FILE if there is any. (To split sentences correctly)
 
 * If you want to observe the analyzing process, change DEBUG in each python file to 1 (Currently 0)
 ____________________________________________________
