@@ -14,13 +14,10 @@ make a directory for the audio
 change the name of files and locate them in the directory above (./{title})
 
     - original text file: {title}_ORIGINAL.txt
-    
       (eg. androcles-shorter_ORIGINAL.txt)
     
     - original audio file: {title}.mp3  
-    
       (eg. androcles-shorter.mp3)
-      (Must use single channel (mono) audio)
   
 ### 2. Change ROOT in main.py
     ROOT = "title"
