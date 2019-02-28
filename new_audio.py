@@ -46,13 +46,12 @@ def similar_word_idx(sentence, target_word, loc, end):
     candidate_idx = -1
     candidate_prob = -1.0
     new_sentence = sentence[loc:loc+end+1]
+    print("new sentence length: {}".format(len(new_sentence)))
     for idx, word in enumerate(new_sentence):
         prob = similarity(new_sentence[idx], target_word)
-        if prob > candidate_prob:
+        if prob > candidate_prob and len(word) > 3:
             candidate_prob = prob
             candidate_idx = idx + loc
-            if prob == 1.0:
-                break
 
     if DEBUG: print("chunk word:{}, candidate:{}, probability:{}\n".format
                     (target_word, sentence[candidate_idx], candidate_prob))
@@ -132,6 +131,10 @@ def update(text, stt_text, intervals):
                 l = [n for n in findings.keys() if 0 < n <= key+len(chunk)]
                 if len(l) > 0 : loc = max(l) + len(chunk) - findings[max(l)]
                 if DEBUG: print("final location: {}".format(loc))
+                if loc >= len(sentence):
+                    intervals[sent_idx][1] = stt_data[2]
+                    sent_idx += 1
+                    break
 
             else:                                                   # NOT FOUND
                 unknowns.append(",".join(stt_data))
@@ -144,9 +147,9 @@ def update(text, stt_text, intervals):
                 loc += len(chunk)
                 if DEBUG: print("current location: {}\n".format(loc))
 
-            if loc >= len(sentence):
-                sent_idx += 1
-                break
+                if loc >= len(sentence):
+                    sent_idx += 1
+                    break
 
     return intervals, unknowns, stt_text
 
